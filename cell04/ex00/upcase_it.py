@@ -1,2 +1,2 @@
-txt_input = input("Give mea wrod: ")
-print(txt_input.upper())1
+word = input("jirawat: ")
+print(word.upper())
