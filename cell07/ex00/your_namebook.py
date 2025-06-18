@@ -1,14 +1,10 @@
-def array_of_names(names_dict):
-    full_names = []
-    for first, last in names_dict.items():
-        full_name = f"{first.capitalize()} {last.capitalize()}"
-        full_names.append(full_name)
-    return full_names
+def array_of_names(name_dict):
+    return [f"{first.capitalize()} {last.capitalize()}" for first, last in name_dict.items()]
 if __name__ == "__main__":
-    sample_dict = {
-        "alice": "smith",
-        "bob": "johnson",
-        "charlie": "brown"
+    persons = {
+        "jean": "valjean",
+        "grace": "hopper",
+        "xavier": "niel",
+        "fifi": "brindacier"
     }
-    result = array_of_names(sample_dict)
-    print(result)
+    print(array_of_names(persons))
